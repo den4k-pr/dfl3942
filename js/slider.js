@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     new Swiper(galleryEl, {
         loop: true,
         spaceBetween: 20,
-        slidesPerView: 2,
+        
+        // Змінено на 'auto' для підтримки різної ширини слайдів
+        slidesPerView: 'auto', 
+        
+        autoHeight: false, // Рекомендується вимкнути, якщо висота слайдів фіксована CSS-ом
         centeredSlides: false,
+        
         // Кнопки навігації видалено згідно з ТЗ
         
         pagination: {
@@ -21,8 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: ".s8__arrow-prev"
         }
     });
-    
-    
 });
 document.addEventListener("DOMContentLoaded", () => {
     const sliderEl = document.querySelector(".second-swiper");

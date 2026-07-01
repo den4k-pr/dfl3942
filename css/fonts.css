@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Bebas Nune';
-    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-family: 'LeagueGothic';
+    src: url('../fonts/LeagueGothic-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
